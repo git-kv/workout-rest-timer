@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -25,7 +29,18 @@ button {
 input {
   text-align: center;
   margin-top: 25px;
-  width: 100%;
+  width: 99%;
+  padding: 0;
+}
+
+input[type=number].no-spinner::-webkit-inner-spin-button,
+input[type=number].no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number].no-spinner {
+  -moz-appearance: textfield;
 }
 
 .about {
