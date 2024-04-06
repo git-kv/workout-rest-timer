@@ -8,6 +8,8 @@ resetBtn.addEventListener('click', resetSetCount);
 function startTimer() {
   document.getElementById("start-timer-btn").disabled = true;
   document.getElementById("reset-btn").disabled = true;
+  sets++;
+  document.getElementById("sets").innerHTML = sets;
   let counter = document.getElementById("rest-time").value;
 
   const interval = setInterval(() => {
@@ -16,8 +18,6 @@ function startTimer() {
 
     if (counter < 0) {
       clearInterval(interval);
-      sets++;
-      document.getElementById("sets").innerHTML = sets;
       document.getElementById("start-timer-btn").disabled = false;
       document.getElementById("reset-btn").disabled = false;
     }
