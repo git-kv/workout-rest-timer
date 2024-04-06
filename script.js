@@ -9,11 +9,9 @@ function startTimer() {
   document.getElementById("start-timer-btn").disabled = true;
   document.getElementById("reset-btn").disabled = true;
   let counter = document.getElementById("rest-time").value;
-  console.log(counter);
 
   const interval = setInterval(() => {
     document.getElementById("timer").innerHTML = counter;
-    console.log(counter);
     counter--;
 
     if (counter < 0) {
