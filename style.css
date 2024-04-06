@@ -24,6 +24,12 @@ button {
   font-size: 3rem;
 }
 
+button:disabled {
+  background-color: #666;
+  color: #555;
+  border-color: #666;
+}
+
 .countdown p,
 .set-count p,
 .rest-length-input p {
